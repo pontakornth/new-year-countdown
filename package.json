@@ -9,6 +9,9 @@
   },
   "dependencies": {
     "core-js": "^3.4.3",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.1.4",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.3.0"

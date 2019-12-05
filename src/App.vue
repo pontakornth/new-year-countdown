@@ -1,6 +1,5 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+  <div class="bg-blue-900 text-gray-100 h-screen flex justify-center items-center" id="app">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
   </div>
 </template>
@@ -18,12 +17,27 @@ export default class App extends Vue {}
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@tailwind base;
+
+h2,h2,h3,h4,h5,h6 {
+  @apply font-bold;
 }
+
+h1 {
+  @apply text-3xl font-bold;
+}
+h2 {
+  @apply text-xl;
+}
+h3 {
+  @apply text-lg;
+}
+a {
+  @apply text-blue-600 underline;
+}
+
+
+@tailwind components;
+@tailwind utilities;
+
 </style>

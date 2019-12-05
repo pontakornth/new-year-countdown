@@ -17,10 +17,11 @@ export default class App extends Vue {}
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Chonburi|K2D&display=swap');
 @tailwind base;
 
 h2,h2,h3,h4,h5,h6 {
-  @apply font-bold;
+  @apply font-bold font-display;
 }
 
 h1 {

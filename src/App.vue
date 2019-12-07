@@ -1,16 +1,16 @@
 <template>
   <div class="bg-blue-900 text-gray-100 h-screen flex justify-center items-center" id="app">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <Counter msg="Welcome to Your Vue.js + TypeScript App"/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import Counter from './components/Counter.vue';
 
 @Component({
   components: {
-    HelloWorld,
+    Counter,
   },
 })
 export default class App extends Vue {}

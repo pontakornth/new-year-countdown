@@ -1,8 +1,11 @@
 <template>
   <div class="text-gray-100 rounded-lg">
     <h5 class="text-3xl text-center">นับถอยหลังถึงวันปีใหม่</h5>
-   <h1 class="font-display text-6xl">
+   <h1 v-if="beforeNewYear" class="font-display text-6xl">
      {{hours}}:{{displayMinutes}}:{{displaySeconds}}
+  </h1>
+  <h1 v-else class="font-display text-6xl">
+    สุนสันต์วันปีใหม่ เย้ !
   </h1>
   </div>
 </template>
@@ -18,6 +21,7 @@ export default class HelloWorld extends Vue {
   private seconds: number = 0;
   private displayMinutes: string = '0';
   private displaySeconds: string = '0';
+  private beforeNewYear = true;
   public mounted(): void {
     setInterval(this.countdown, 1000);
   }
@@ -32,6 +36,9 @@ export default class HelloWorld extends Vue {
 
     // Calculation
     const timeDiff = newYear.getTime() - now;
+    if (timeDiff <= 0) {
+      this.beforeNewYear = false;
+    }
     this.hours = Math.floor(timeDiff / mHours);
     this.minutes = Math.floor((timeDiff % mHours) / mMinutes);
     this.seconds = Math.floor((timeDiff % mMinutes) / mSeconds);

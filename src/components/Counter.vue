@@ -37,7 +37,7 @@ export default class HelloWorld extends Vue {
 
     // Calculation
     const timeDiff = newYear.getTime() - now;
-    if (timeDiff <= mHours) {
+    if (timeDiff <= (10 * mSeconds)) {
       this.willBlink = true;
     }
     if (timeDiff <= 0) {

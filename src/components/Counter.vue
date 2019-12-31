@@ -1,7 +1,7 @@
 <template>
   <div class="text-gray-100 rounded-lg">
     <h5 class="text-3xl text-center">นับถอยหลังถึงวันปีใหม่</h5>
-   <h1 v-if="beforeNewYear" class="font-display text-6xl">
+   <h1 v-if="beforeNewYear" class="text-center font-display text-6xl blinking">
      {{hours}}:{{displayMinutes}}:{{displaySeconds}}
   </h1>
   <h1 v-else class="font-display text-6xl">
@@ -53,5 +53,18 @@ export default class HelloWorld extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+@keyframes scale {
+  0% {
+    transform: scale(1);
+    color: red;
+    @apply text-gray-100;
+  }
+  100% {
+    transform: scale(1.2);
+    @apply text-red-500;
+  }
+}
+.blinking {
+  animation: scale 0.5s ease-in-out 0s infinite alternate none;
+}
 </style>

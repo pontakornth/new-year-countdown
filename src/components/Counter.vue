@@ -1,11 +1,11 @@
 <template>
   <div class="text-gray-100 rounded-lg">
-    <h5 class="text-3xl text-center">นับถอยหลังถึงวันปีใหม่</h5>
-   <h1 v-if="beforeNewYear" :class="`text-center font-display text-6xl ${willBlink ? 'blinking' : ''}`">
+    <h5 class="text-3xl text-center">นับถอยหลังถึงวันสอบ GAT-PAT</h5>
+   <h1 v-if="beforeDestination" :class="`text-center font-display text-6xl ${willBlink ? 'blinking' : ''}`">
      {{hours}}:{{displayMinutes}}:{{displaySeconds}}
   </h1>
-  <h1 v-else class="font-display text-6xl">
-    สุนสันต์วันปีใหม่ เย้ !
+  <h1 v-else class="font-display text-center text-6xl">
+    อ้ากกกกกกกกกกกกกกกกก
   </h1>
   </div>
 </template>
@@ -21,14 +21,14 @@ export default class HelloWorld extends Vue {
   private seconds: number = 0;
   private displayMinutes: string = '0';
   private displaySeconds: string = '0';
-  private beforeNewYear = true;
+  private beforeDestination = true;
   private willBlink = false;
   public mounted(): void {
     setInterval(this.countdown, 1000);
   }
   private countdown(): void {
     const now: number = Date.now();
-    const newYear: Date = new Date('01/01/2020') ;
+    const destination: Date = new Date('2020-02-22') ;
 
     // Milliseconds of format
     const mSeconds: number = 1000;
@@ -36,12 +36,12 @@ export default class HelloWorld extends Vue {
     const mHours: number = mMinutes * 60;
 
     // Calculation
-    const timeDiff = newYear.getTime() - now;
+    const timeDiff = destination.getTime() - now;
     if (timeDiff <= (10 * mSeconds)) {
       this.willBlink = true;
     }
     if (timeDiff <= 0) {
-      this.beforeNewYear = false;
+      this.beforeDestination = false;
     }
     this.hours = Math.floor(timeDiff / mHours);
     this.minutes = Math.floor((timeDiff % mHours) / mMinutes);

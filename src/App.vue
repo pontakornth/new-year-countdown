@@ -17,7 +17,7 @@ export default class App extends Vue {}
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Chonburi|K2D&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kanit|K2D&display=swap');
 @tailwind base;
 
 h2,h2,h3,h4,h5,h6 {

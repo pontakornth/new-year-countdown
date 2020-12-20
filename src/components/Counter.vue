@@ -1,11 +1,11 @@
 <template>
   <div class="text-gray-100 rounded-lg">
-    <h5 class="text-3xl text-center">นับถอยหลังถึงวันสอบ GAT-PAT</h5>
+    <h5 class="text-3xl text-center">นับถอยหลังสู่ 2021</h5>
    <h1 v-if="beforeDestination" :class="`text-center font-display text-6xl ${willBlink ? 'blinking' : ''}`">
-     {{hours}}:{{displayMinutes}}:{{displaySeconds}}
+     {{hours}} hour(s) {{displayMinutes}} minute(s) {{displaySeconds}} second(s)
   </h1>
   <h1 v-else class="font-display text-center text-6xl">
-    อ้ากกกกกกกกกกกกกกกกก
+    Hello, 2021. New patches will arrive soon.
   </h1>
   </div>
 </template>
@@ -28,7 +28,7 @@ export default class HelloWorld extends Vue {
   }
   private countdown(): void {
     const now: number = Date.now();
-    const destination: Date = new Date('2020-02-22') ;
+    const destination: Date = new Date('2021-01-01') ;
 
     // Milliseconds of format
     const mSeconds: number = 1000;

@@ -1,5 +1,12 @@
 # new-year-counter
 
+Countdown to New Year 2021
+
+## Goals
+- [x] Human readable time
+- [ ] Backdrop filter
+- [ ] Change title with time
+
 ## Project setup
 ```
 npm install

@@ -13,7 +13,13 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
-@Component
+@Component({
+  metaInfo() {
+    return {
+      title: `${(this as HelloWorld).hours}:${(this as HelloWorld).displayMinutes}:${(this as HelloWorld).displaySeconds}`,
+    };
+  },
+})
 export default class HelloWorld extends Vue {
 
   private hours: number = 0;

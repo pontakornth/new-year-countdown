@@ -5,7 +5,7 @@ Countdown to New Year 2021
 ## Goals
 - [x] Human readable time
 - [x] Backdrop filter
-- [ ] Change title with time
+- [x] Change title with time
 
 ## Project setup
 ```

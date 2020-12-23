@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-900 text-gray-100 h-screen flex justify-center items-center" id="app">
+  <div class="app" id="app">
     <Counter msg="Welcome to Your Vue.js + TypeScript App"/>
   </div>
 </template>
@@ -35,6 +35,12 @@ h3 {
 }
 a {
   @apply text-blue-600 underline;
+}
+
+.app {
+  @apply text-gray-100 h-screen flex justify-center items-center;
+  background: url("./assets/background.jpg");
+  background-position: center;
 }
 
 

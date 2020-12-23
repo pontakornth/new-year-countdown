@@ -1,5 +1,5 @@
 <template>
-  <div class="text-gray-100 rounded-lg">
+  <div class="card">
     <h5 class="text-3xl text-center">นับถอยหลังสู่ 2021</h5>
    <h1 v-if="beforeDestination" :class="`text-center font-display text-6xl ${willBlink ? 'blinking' : ''}`">
      {{hours}} hour(s) {{displayMinutes}} minute(s) {{displaySeconds}} second(s)
@@ -70,5 +70,11 @@ export default class HelloWorld extends Vue {
 }
 .blinking {
   animation: scale 0.5s ease-in-out 0s infinite alternate none;
+}
+
+.card {
+ @apply text-gray-900 rounded-lg p-4;
+ backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+ background: rgba(234, 234, 234, .2);
 }
 </style>

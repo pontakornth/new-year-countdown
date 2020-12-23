@@ -8684,6 +8684,7 @@ fsevents@~2.1.2:
     typescript: ~3.5.3
     vue: ^2.6.10
     vue-class-component: ^7.0.2
+    vue-meta: ^2.4.0
     vue-property-decorator: ^8.3.0
     vue-template-compiler: ^2.6.10
   languageName: unknown
@@ -11853,6 +11854,15 @@ typescript@~3.5.3:
     vue-template-compiler:
       optional: true
   checksum: 30c649d7797336cf80ff8f0d77a44f601db83f9ffeba3f9b7f7a89959c721904a79f194203ad08ca0efa652347a73067874bea27dd3cdaa56431ed00b6c2a249
+  languageName: node
+  linkType: hard
+
+"vue-meta@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "vue-meta@npm:2.4.0"
+  dependencies:
+    deepmerge: ^4.2.2
+  checksum: 529ada6c6dc759d2c7aecc77d0d04c1fc60add706b356bb12391cb31149b722f1fe35d1fa171bb154d67ccd76e538aa649673a8aca1f69a493c7e788d79a6c4a
   languageName: node
   linkType: hard
 

@@ -37,6 +37,10 @@ a {
   @apply text-blue-600 underline;
 }
 
+html, body, * {
+  box-sizing: border-box;
+}
+
 .app {
   @apply text-gray-100 h-screen flex justify-center items-center;
   background: url("./assets/background.jpg");

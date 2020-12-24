@@ -67,7 +67,7 @@ export default class HelloWorld extends Vue {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="postcss" scoped>
 @keyframes scale {
   0% {
     transform: scale(1);

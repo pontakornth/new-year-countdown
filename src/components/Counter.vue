@@ -2,7 +2,7 @@
   <div class="card">
     <h5 class="header">นับถอยหลังสู่ 2021</h5>
    <h1 v-if="beforeDestination" :class="`time ${willBlink ? 'blinking' : ''}`">
-     {{hours}} hour(s) {{displayMinutes}} minute(s) {{displaySeconds}} second(s)
+      {{ humanTime }}
   </h1>
   <h1 v-else class="past-time">
     Hello, 2021. New patches will arrive soon.
@@ -29,6 +29,11 @@ export default class HelloWorld extends Vue {
   private displaySeconds: string = '0';
   private beforeDestination = true;
   private willBlink = false;
+
+  get humanTime() {
+    return `${this.hours} hour(s) ${this.displayMinutes} minute(s) ${this.displaySeconds} second(s)`;
+  }
+
   public mounted(): void {
     setInterval(this.countdown, 1000);
   }

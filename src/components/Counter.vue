@@ -98,7 +98,7 @@ export default class HelloWorld extends Vue {
 .card {
  @apply text-gray-900 rounded-lg p-4;
  backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
- background: rgba(234, 234, 234, .2);
+ background: rgba(234, 234, 234, .5);
 }
 
 @screen lg {

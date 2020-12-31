@@ -39,7 +39,7 @@ export default class HelloWorld extends Vue {
   }
   private countdown(): void {
     const now: number = Date.now();
-    const destination: Date = new Date('2021-01-01') ;
+    const destination: Date = new Date(2021, 0, 1 , 0, 0, 0, 0) ;
 
     // Milliseconds of format
     const mSeconds: number = 1000;

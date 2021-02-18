@@ -18,7 +18,6 @@ export default class App extends Vue {}
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Kanit|K2D&display=swap');
-@tailwind base;
 
 h2,h2,h3,h4,h5,h6 {
   @apply font-bold font-display;
@@ -46,9 +45,5 @@ html, body, * {
   background: url("./assets/background.jpg");
   background-position: center;
 }
-
-
-@tailwind components;
-@tailwind utilities;
 
 </style>

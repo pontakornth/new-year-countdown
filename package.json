@@ -25,7 +25,8 @@
     "@vue/cli-service": "^4.1.0",
     "lint-staged": "^9.4.3",
     "typescript": "~3.5.3",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "vue-windicss-preprocess": "^2.0.0"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"

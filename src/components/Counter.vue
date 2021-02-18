@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <h5 class="header">นับถอยหลังสู่ 2021</h5>
+    <h5 class="header font-display">นับถอยหลังสู่ 2021</h5>
    <h1 v-if="beforeDestination" :class="`time ${willBlink ? 'blinking' : ''}`">
       {{ humanTime }}
   </h1>
